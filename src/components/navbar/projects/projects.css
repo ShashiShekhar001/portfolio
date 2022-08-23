@@ -1,0 +1,42 @@
+.project{
+    margin-top: -130px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:20px;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    box-shadow: 1px 1px 1px 1px #dbdada;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .item-cont{
+    text-align: left;
+  }
+  .item-name{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .item-detail{
+    font-size: 1.1rem;
+  }
+  .item-date{
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 840px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns:  auto;
+        grid-gap:10px;
+        padding: 10px;
+      }
+      .project{
+        margin-top: 50px;
+      }
+}

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Kaushan+Script&display=swap');
+body{
+    background-color: #E5E5E5;
+    color: #14213D;
+}
+.logo-name{
+    font-family: 'Allura', cursive;
+}
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.sidebar-close{
+    display: none;
+}
+.sidebar-links{
+    display: none;
+}
+.title{
+    font-size: 2.4rem;
+    margin-left: 110px;
+    margin-top: 10px;
+}
+.navButton{
+    background-color: #E5E5E5;
+    border: none;
+    height: 80px;
+    width: 140px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.navButton:hover{
+   background-color: white;   
+}
+@media screen and (max-width: 1160px){
+  .navButton{
+    font-size: 0.8rem;
+    width: 100px;
+  }
+  .navbarItems{
+    margin-right: 60px;
+  }
+}
+@media screen and (max-width: 1000px){
+    .navButton{
+        font-size:0.8rem ;
+        width: 90px;
+    }
+    .navbarItems{
+        margin-right: 10px;
+      }
+}
+@media screen and (max-width: 950px){
+    .navButton{
+        font-size:0.8rem ;
+        width: 80px;
+    }
+    .navbarItems{
+        margin-right: 50px;
+      }
+}
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #283b8b;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 12%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  .hamburger:hover {
+    background-color: #2642af;
+  }
+  @media screen and (min-width: 1200px){
+    .sidebar{
+        display: none;
+    }
+  }
+  
+  @media screen and (max-width: 920px) {
+    .hamburger {
+      display: block;
+    }
+    .navbarItems{
+        display: none;
+    }
+    .sidebar-overlay{
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .sidebar-overlay.expanded{
+        z-index: 1000;
+        opacity: 1;
+    }
+    .sidebar{
+        top: 40px;
+        left: 7%;
+        width: 80%;
+        border-radius: 7px;
+        height: 90%;
+        position:absolute;
+        padding: 30px;
+        background-color: #E5E5E5;
+    }
+     .expanded{
+        transform: scale(1);
+    }
+    .sidebar-links{
+        display: block;
+        font-size: 1.6rem;
+        width: 30%;
+        height: 200px;
+        margin: 24vh auto;
+    }
+    .sidebar-close{
+        display: block;
+        width: 30px;
+        font-size: 1.3rem;
+        background-color: #E5E5E5;
+        border: transparent;
+        height:30px;
+        cursor: pointer;
+
+    }
+  }
+  @media screen and (max-width: 625px) {
+    .title{
+        font-size: 2rem;
+        margin-left: 30px;
+    }
+    .hamburger {
+      display: block;
+    }
+    .navbarItems{
+        display: none;
+    }
+    .sidebar-overlay{
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .sidebar-overlay.expanded{
+        z-index: 1000;
+        opacity: 1;
+    }
+    .sidebar{
+        top: 40px;
+        left: 5%;
+        width: 80%;
+        border-radius: 7px;
+        height: 90%;
+        position:absolute;
+        padding: 30px;
+        background-color: #E5E5E5;
+    }
+     .expanded{
+        transform: scale(1);
+    }
+    .sidebar-links{
+        font-size: 1.6rem;
+        width: 30%;
+        height: 200px;
+        margin: 24vh auto;
+    }
+    .sidebar-close{
+        width: 30px;
+        font-size: 1.3rem;
+        background-color: #E5E5E5;
+        border: transparent;
+        height:30px;
+        cursor: pointer;
+
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .logo-name{
+      font-size: 1.5rem;
+    }
+    .hamburger{
+        top: 75px;
+    } 
+    .sidebar{
+        top: 40px;
+        left: 8%;
+        width: 70%;
+        border-radius: 7px;
+        height: 80%;
+        position:absolute;
+        padding: 30px;
+        background-color: #E5E5E5;
+    }
+    .sidebar-links{
+        font-size:30px;
+        width: 30%;
+        height: 200px;
+        margin: 24vh auto;
+    }
+  }
