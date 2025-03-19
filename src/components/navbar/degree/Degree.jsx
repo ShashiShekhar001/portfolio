@@ -15,7 +15,7 @@ function Degree(){
                  <div className="deg-det-hed">
                     <div className="deg-flex">
                     <h1 className="col-name">National Institute of Technology,Warangal</h1>
-                    <p className='range'>2019-Present</p>
+                    <p className='range'>2019-2023</p>
                     </div>
                     <h2 className="course-name">B.Tech in Electronic and Communication Engineering</h2>
                  </div>
