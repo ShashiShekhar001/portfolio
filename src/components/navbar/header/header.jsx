@@ -18,7 +18,8 @@ const Header = ()=>{
                     <div className='icon'><a href="mailto: sssshekharjha@gmail.com"><Gicon/></a></div>
                </div>
                <div className="hButton">
-                  <button className='star'>⭐ Star Me On Github</button>
+                <button></button>
+               <a href="https://github.com/ShashiShekhar001"><button className='star'>⭐ Star Me On Github</button></a>
                </div>
             </div>
             <div className="hImg">
